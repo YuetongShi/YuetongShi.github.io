@@ -1,40 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Homepage Yuetong Shi</title>
 </head>
 <body>
-    <p class="school">I'm currently a computer science student at
-        <a class="school-link" target="_blank" href="https://www.mcgill.ca">McGill University.</a></p>
-    <p class="notification">I'm still updating this page, it will be available soon.
-    In the meantime, see my <a class="cv-link" target="_blank" href="cv.html">cv</a> instead.</p>
+    <div class="homepage-headline">
+        <a href="homepage.html" class="homepage-head-contents homepage-default" style="margin-left: 25px">
+            Homepage
+        </a>
+        <a href="courses.html" class="homepage-head-contents">Courses</a>
+        <a href="cv.html" class="homepage-head-contents">Resume</a>
+        <a class="homepage-head-contents">Job Hunting</a>
+        <a href="contact.html" class="homepage-head-contents">Contact</a>
+    </div>
+    <div class="homepage-main-body">
+        <div class="homepage-content">
+            <div class="homepage-text-area">
+                <p class="homepage-text1">
+                I grew up in Harbin, located in the northeast of China, which is the most beautiful place
+                in the world.  In August 2021, at my age of 19, I moved to Montreal for university.
+                I'm currently a U3 computer science student at McGill University, and I'm graduating
+                at the end of Winter 2025 semester.
+                </p>
+                <p class="homepage-text2">
+                    Say why computer science was selected as my major is that I have been fascinated by
+                    Rubik's Cubes since 2014, while I saw numerous experts on it, including robots. It
+                    left a deep impression on me when I saw a robot solving a 3 x 3 cube in only 1 second.
+                    Even the world record holder would still need 6.55s to solve a same cube at that time,
+                    how can it be so intelligent? However, when electronic cubes became increasingly
+                    popular in later years, things became way more magical and mysterious for me. I found
+                    it surprisingly cool that computers not only connected to the timer on my cellphone,
+                    but also tracked the cube in my hand. Since then, I decided to learn about computer
+                    science in order to discover the magic behind computers.
+                    And luckily of me, I was accepted by school of computer science at McGill.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 <style>
     body{
+        margin: 0;
         cursor: default;
     }
-    .school{
-        font-size: 20px;
-        font-family: Arial,serif;
-        margin-left: 500px;
-    }
-    .notification{
-        margin-left: 450px;
-        font-family: Arial,serif;
-        color: royalblue;
-        font-weight: bolder;
+
+    .homepage-headline{
+        background-color: dodgerblue;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        margin: 0;
     }
 
-    .cv-link{
-        color: royalblue;
+    .homepage-head-contents{
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        margin-left: 5px;
+        padding: 8px;
+        text-decoration: none;
     }
 
-    .school-link{
-        color: black;
+    .homepage-head-contents:hover{
+        background-color: white;
+        color: dodgerblue;
+        transition: 0.5s;
     }
+
+    .homepage-default{
+        background-color: white;
+        color: lightslategrey;
+        cursor: default;
+    }
+
+    .homepage-main-body{
+        background-image: url("mcgill-campus.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh; /* 设置最小高度为视口高度 */
+        position: relative;
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-content{
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: white;
+        width: 940px;
+        height: 470px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-content:hover{
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .homepage-text-area{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: bold;
+        font-family: Arial,sans-serif;
+    }
+
+    .homepage-text1{
+        margin-bottom: 50px;
+    }
+
 </style>
-<script>
-    alert("pending update")
-</script>
 </html>
