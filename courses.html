@@ -5,35 +5,80 @@
     <title>Courses</title>
 </head>
 <body>
-    <p class="disclaimer">Disclaimer: I will post my class notes here only if I write them using LATEX.
-        Class notes are updated weekly, and I might occasionally make mistakes.</p>
-    <p class="disclaimer">For now, course information for both semesters are <b>TENTATIVE!</b></p>
-    <p class="semester">Fall 2024</p>
-    <p class="heading">COMP 307 Principles of Web Development</p>
-    <p class="heading">COMP 361D1 Software Engineering Project</p>
-    <p class="heading">COMP 370 Intro to Data Science</p>
-    <p class="heading">COMP 561 Computational Biology Methods & Research</p>
-    <p class="semester">Winter 2025</p>
-    <p class="heading">COMP 310 Operating System</p>
-    <p class="heading">COMP 330 Theory of Computation</p>
-    <p class="heading">COMP 361D2 Software Engineering Project</p>
-    <p class="heading">COMP 421 Database Systems</p>
-    <p class="heading"></p>
+    <div class="courses-headline">
+        <a href="homepage.html" class="courses-head-contents" style="margin-left: 25px">
+            Homepage
+        </a>
+        <a href="courses.html" class="courses-head-contents courses-default">Courses</a>
+        <a class="courses-head-contents">Job Hunting</a>
+        <a href="contact.html" class="courses-head-contents">Contact</a>
+    </div>
+
+    <p class="courses-disclaimer" style="margin-top: 20px">
+        Disclaimer: I will post my class notes here only if I write them using LATEX.
+        Class notes are updated weekly, and I might occasionally make mistakes.
+    </p>
+    <p class="courses-disclaimer"> In order to contribute to academic integrity, and given that
+        course instructors might reuse course materials from previous years,
+        I will <b>NOT</b> post my projects.</p>
+    <p class="courses-disclaimer">For now, course information for both semesters are <b>TENTATIVE!</b></p>
+    <p class="courses-semester">Fall 2024</p>
+    <p class="courses-heading">COMP 307 Principles of Web Development</p>
+    <p class="courses-heading">COMP 361D1 Software Engineering Project</p>
+    <p class="courses-heading">COMP 370 Intro to Data Science</p>
+    <p class="courses-heading">COMP 561 Computational Biology Methods & Research</p>
+    <p class="courses-semester">Winter 2025</p>
+    <p class="courses-heading">COMP 310 Operating System</p>
+    <p class="courses-heading">COMP 330 Theory of Computation</p>
+    <p class="courses-heading">COMP 361D2 Software Engineering Project</p>
+    <p class="courses-heading">COMP 421 Database Systems</p>
+    <p class="courses-heading"></p>
 </body>
 <style>
     body{
+        margin: 0;
         cursor: default;
     }
 
-    .semester{
-        font-family: Arial, serif;
-        margin-top: 40px;
-        font-weight: bolder;
-        color: rgb(97, 97, 97);
-        font-size: 24px;
+    .courses-headline{
+        background-color: dodgerblue;
+        padding-bottom: 8px;
+        padding-top: 8px;
     }
 
-    .disclaimer{
+    .courses-head-contents{
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        margin-left: 5px;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .courses-head-contents:hover{
+        background-color: white;
+        color: dodgerblue;
+        transition: 0.5s;
+    }
+
+    .courses-default{
+        background-color: white;
+        color: lightslategrey;
+        cursor: default;
+    }
+
+    .courses-semester{
+        font-family: Arial, serif;
+        margin-top: 40px;
+        font-weight: bold;
+        color: rgb(97, 97, 97);
+        font-size: 24px;
+        margin-left: 26px;
+    }
+
+    .courses-disclaimer{
         font-family: Arial, serif;
         text-align: center;
         font-style: italic;
@@ -41,12 +86,12 @@
         margin-bottom: 20px;
     }
 
-    .heading{
+    .courses-heading{
         font-family: "Bell MT",serif;
         font-size: 20px;
         color: deepskyblue;
-        font-weight: bold;
+        font-weight: lighter;
+        margin-left: 26px;
     }
-
 </style>
 </html>
