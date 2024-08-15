@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<div class="homepage-headline">
+    <a href="homepage-chn.html" class="homepage-head-contents homepage-default" style="margin-left: 25px">
+        主页
+    </a>
+    <a href="courses.html" class="homepage-head-contents">课程</a>
+    <a href="job-hunting-chn.html" class="homepage-head-contents">找工作</a>
+    <a href="contact-chn.html" class="homepage-head-contents">联系</a>
+    <a href="homepage.html" class="language">English</a>
+</div>
+<div class="homepage-main-body">
+    <div class="homepage-content">
+        <div class="homepage-text-area">
+            <p class="homepage-text1">
+                我出生于天鹅项下的珍珠-哈尔滨。2021年8月，在我19岁那一年，我离开家前往蒙特利尔读大学。
+                我目前是麦吉尔大学计算机科学专业大四学生，预计在2025年6月毕业。
+            </p>
+            <p class="homepage-text2">
+                我选择计算机专业，源于我自2014年起对魔方的热爱。我当时有幸见到了大量的魔方高手，其中不乏机器人。当我眼看着
+                机器人一秒复原三阶魔方时，我感叹于他为何如此聪明，就连当时的世界纪录保持者都需要6秒55来复原魔方。然而这
+                只是个开始，真正的震撼源于电子魔方的兴起。我不仅可以将手触计时器连接到我的设备上，还可以让电脑随时追踪
+                魔方的运动轨迹。自此，我决定进修计算机专业从而解开谜团，很荣幸能被麦吉尔大学的计算机学院录取。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    body{
+        margin: 0;
+        cursor: default;
+    }
+
+    .homepage-headline{
+        background-color: dodgerblue;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        margin: 0;
+    }
+
+    .homepage-head-contents{
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        margin-left: 5px;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .homepage-head-contents:hover{
+        background-color: white;
+        color: dodgerblue;
+        transition: 0.5s;
+    }
+
+    .homepage-default{
+        background-color: white;
+        color: lightslategrey;
+        cursor: default;
+    }
+
+    .homepage-main-body{
+        background-image: url("mcgill-campus.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh; /* 设置最小高度为视口高度 */
+        position: relative;
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-content{
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: white;
+        width: 940px;
+        height: 470px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-content:hover{
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+        transition: 0.5s;
+    }
+
+    .homepage-text-area{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: bold;
+        font-family: Arial,sans-serif;
+    }
+
+    .homepage-text1{
+        margin-bottom: 50px;
+    }
+
+    .language{
+        margin-left: 810px;
+        text-align: right;
+        color: white;
+        text-decoration: none;
+    }
+
+</style>
+<script>
+    alert("我目前所在的学校为英文授课，课程介绍和资料也均为英文，因此“课程”页无中文")
+</script>
+</html>
